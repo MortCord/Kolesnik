@@ -1,0 +1,25 @@
+.disc-card{
+    background: #E5E7EB;
+    border-radius: 8px;
+    min-width: 674px;
+    min-height: 148px;
+
+}
+
+.disc-card h2{
+    font-size: 20px;
+}
+
+.disc-card p,a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.disc-text{
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.disc-card a{
+    margin-left: 30px;
+}

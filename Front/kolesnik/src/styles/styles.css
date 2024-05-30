@@ -1,0 +1,18 @@
+@import url(./components/_header.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(./components/_main.css);
+@import url(./components/_discipline.css);
+@import url(./components/_footer.css);
+
+
+body{
+    margin: 0 auto;
+    background: #F3F4F6;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }

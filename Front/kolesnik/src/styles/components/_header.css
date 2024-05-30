@@ -1,0 +1,33 @@
+.lv1{
+    background: #1F2937;
+    color: #ffff;
+    min-height: 84px;
+}
+
+.header-text{
+    height: 100%;
+}
+
+.header-text h1{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+
+nav{
+    background: #374151;
+    height: 64px;
+}
+
+.nav-el{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-link{
+    color: white;
+    font-size: 14px;
+}

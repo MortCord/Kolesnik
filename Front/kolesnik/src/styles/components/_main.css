@@ -1,0 +1,39 @@
+.portfolio{
+    font-size: 24px;
+    min-height: 152px;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio h2{
+    margin-left: 30px;
+}
+
+.port-next{
+    width: 100%;
+    background: #ffff;
+    min-height: 152px;
+    font-size: 20px;
+}
+
+.plot{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.discipline{
+    font-size: 24px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.discipline h2{
+    margin-left: 30px;
+}
+
+.disc-cards{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
