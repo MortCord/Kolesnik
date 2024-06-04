@@ -1,4 +1,4 @@
-.disc-card{
+.lect-card{
     background: #fff;
     border-radius: 8px;
     min-width: 674px;
@@ -6,20 +6,20 @@
 
 }
 
-.disc-card h2{
+.lect-card h2{
     font-size: 20px;
 }
 
-.disc-card p,a{
+.lect-card p,a{
     font-size: 16px;
     text-decoration: none;
 }
 
-.disc-text{
+.lect-text{
     padding-top: 20px;
     margin-left: 30px;
 }
 
-.disc-card a{
+.lect-card a{
     margin-left: 30px;
 }

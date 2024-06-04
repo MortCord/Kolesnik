@@ -1,4 +1,4 @@
-.disc-card{
+.lab-card{
     background: #fff;
     border-radius: 8px;
     min-width: 674px;
@@ -6,20 +6,20 @@
 
 }
 
-.disc-card h2{
+.lab-card h2{
     font-size: 20px;
 }
 
-.disc-card p,a{
+.lab-card p,a{
     font-size: 16px;
     text-decoration: none;
 }
 
-.disc-text{
+.lab-text{
     padding-top: 20px;
     margin-left: 30px;
 }
 
-.disc-card a{
+.lab-card a{
     margin-left: 30px;
 }

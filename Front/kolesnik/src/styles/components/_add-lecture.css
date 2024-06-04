@@ -1,0 +1,32 @@
+.add-lect span{
+    font-size: 20px;
+}
+
+.inp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-lect input{
+    min-width: 194px;
+    min-height: 31px;
+}
+
+.add-lect textarea{
+    min-width: 45%;
+    min-height: 96px;
+}
+
+.add-but{
+    min-width: 107px;
+    min-height: 28px;
+    color: #fff;
+    background: #65AB1F;
+    border: 1px #000 solid;
+}
+
+form{
+    gap: 20px;
+    width: 85%;
+}

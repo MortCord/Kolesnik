@@ -9,9 +9,14 @@
     margin-left: 30px;
 }
 
+.plot{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 .port-next{
     width: 100%;
-    background: #ffff;
+    background: #F4EDED;
     min-height: 152px;
     font-size: 20px;
 }

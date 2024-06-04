@@ -1,0 +1,44 @@
+.lab-desc-main{
+    margin-top: 65px;
+}
+
+.lab-desc{
+    width: 90%;
+}
+
+.lab-desc .lect-text {
+    width: 70%;
+}
+
+.lab-change{
+    min-width: 78px;
+    min-height: 32px;
+    background: none;
+    border: 1px #000 solid;
+    transition: 0.2s background;
+}
+
+.lab-del{
+    min-width: 78px;
+    min-height: 32px;
+    background: #DB2323;
+    border: 1px #000 solid;
+    color: #fff;
+    transition: 0.2s background;
+}
+
+.lab-change:hover{
+    color: #fff;
+    background: #000;
+}
+
+.lab-del:hover{
+    color: #000;
+    background: none;
+}
+
+.lab-buts{
+    margin-top: 50px;
+    margin-left: 33px;
+    gap: 40px;
+}

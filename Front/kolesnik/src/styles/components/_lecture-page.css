@@ -1,0 +1,44 @@
+.lect-desc-main{
+    margin-top: 65px;
+}
+
+.lect-desc{
+    width: 90%;
+}
+
+.lect-desc .lect-text {
+    width: 70%;
+}
+
+.lect-change{
+    min-width: 78px;
+    min-height: 32px;
+    background: none;
+    border: 1px #000 solid;
+    transition: 0.2s background;
+}
+
+.lect-del{
+    min-width: 78px;
+    min-height: 32px;
+    background: #DB2323;
+    border: 1px #000 solid;
+    color: #fff;
+    transition: 0.2s background;
+}
+
+.lect-change:hover{
+    color: #fff;
+    background: #000;
+}
+
+.lect-del:hover{
+    color: #000;
+    background: none;
+}
+
+.lect-buts{
+    margin-top: 50px;
+    margin-left: 33px;
+    gap: 40px;
+}

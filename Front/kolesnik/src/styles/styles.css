@@ -3,16 +3,29 @@
 @import url(./components/_main.css);
 @import url(./components/_discipline.css);
 @import url(./components/_footer.css);
+@import url(./components/_lectures.css);
+@import url(./components/_lecture.css);
+@import url(./components//_lecture-page.css);
+@import url(./components/_discipline-works.css);
+@import url(./components/_lab-work.css);
+@import url(./components/_lab-works.css);
+@import url(./components/_lab-page.css);
+@import url(./components/_add-lecture.css);
 
 
-body{
-    margin: 0 auto;
-    background: #F3F4F6;
+body,html{
+    margin: 0;
+    background: #DDDDDD;
     font-family: "Roboto", sans-serif !important;
+    height: 100%;
 }
 
 .roboto-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
+}
+
+.push{
+    height: 100px;
+}
