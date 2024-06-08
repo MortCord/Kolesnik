@@ -1,3 +1,5 @@
+
+
 .lab-desc-main{
     margin-top: 65px;
 }
@@ -18,6 +20,8 @@
     transition: 0.2s background;
 }
 
+
+
 .lab-del{
     min-width: 78px;
     min-height: 32px;
@@ -31,6 +35,7 @@
     color: #fff;
     background: #000;
 }
+
 
 .lab-del:hover{
     color: #000;

@@ -1,32 +1,69 @@
-import React from "react";
-import placeholder from "../img/placeholder.png"
+import React, { useState, useEffect } from "react";
+import placeholder from "../img/placeholder.png";
+import { Link, withRouter } from "react-router-dom";
 
-const LecturePage = () =>{
+const LecturePage = ({ match, history }) => {
+    const [name, setName] = useState('');
+    const [plot, setPlot] = useState('');
+    const [fileName, setFileName] = useState('');
 
-    return(
+    const { id } = match.params;
+
+    useEffect(() => {
+        fetch("http://localhost:8080/lek/getAll")
+            .then(res => res.json())
+            .then((result) => {
+                console.log(result);
+                const lecture = result.find(lekcia => lekcia.id === parseInt(id));
+                if (lecture) {
+                    setName(lecture.name);
+                    setPlot(lecture.plot);
+                    setFileName(lecture.fileName);
+                }
+            })
+            .catch(error => {
+                console.error("Error fetching lecture:", error);
+            });
+    }, [id]);
+
+    const handleDelete = () => {
+        fetch(`http://localhost:8080/lek/delete/${id}`, {
+            method: "DELETE",
+            headers: { 'Content-Type': 'application/json' }
+        })
+        .then(() => {
+            history.push('/lectures');
+        })
+        .catch(error => {
+            console.error("Error deleting lecture:", error);
+        });
+    };
+
+    return (
         <div className="lect-page">
-            <h1>Дисципліна - Комп’ютерні мережі - Лекція 1</h1>
+            <h1>Дисципліна - Комп’ютерні мережі - Лекція {id} - {name}</h1>
             <div className="lect-desc-main d-flex justify-content-center">
                 <div className="lect-desc d-flex justify-content-between">
-                <div>
-                    <p className="lect-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
-since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five 
-centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
-versions of Lorem Ipsum.</p>
-                </div>
-                <div>
-                    <img src={placeholder} alt="lect-img"/>
-                </div>
+                    <div>
+                        <p className="lect-text">{plot}</p>
+                    </div>
+                    <div>
+                        <img 
+                            src={fileName ? `http://localhost:8080/lek/images/${fileName}` : placeholder} 
+                            alt="lect-img" 
+                        />
+                    </div>
                 </div>
             </div>
             <div className="lect-buts d-flex">
-                <button className="lect-change">Редагувати</button>
-                <button className="lect-del">Видалити</button>
+                <Link to={`/editlect/${id}`}>
+                    <button className="lect-change">Редагувати</button>
+                </Link>
+                <button onClick={handleDelete} className="lect-del">Видалити</button>
             </div>
             <div className="push"></div>
         </div>
     );
-}
+};
 
-export default LecturePage;
+export default withRouter(LecturePage);

@@ -6,7 +6,7 @@ const LabWork = (props) =>(
         <div className="lab-text">
             <h2>{props.name ? props.name : 'LabWork'}</h2>
         </div>
-        <Link to="/">Переглянути лабораторну роботу</Link>
+        <Link to={props.link}>Переглянути лабораторну роботу</Link>
 
     </div>
 )

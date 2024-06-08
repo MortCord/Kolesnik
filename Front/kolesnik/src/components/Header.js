@@ -11,9 +11,8 @@ const Header = () =>(
         <nav>
             <div className="nav-el">
                 <Link className="nav-link" to="/#portfolio">Портфоліо</Link>
-                <Link className="nav-link" to="/">Дисципліни</Link>
                 <Link className="nav-link" to="/addlect">Додати нову лекцію</Link>
-                <Link className="nav-link" to="/">Додати нову лабораторну роботу</Link>
+                <Link className="nav-link" to="/addlab">Додати нову лабораторну роботу</Link>
             </div>
         </nav>
     </header>

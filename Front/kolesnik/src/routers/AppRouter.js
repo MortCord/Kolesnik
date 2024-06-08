@@ -19,13 +19,13 @@ const AppRouter = () =>(
             <Switch>
                 <Route path="/" component={Main} exact={true} />
                 <Route path="/lectures" component={Lectures} />
-                <Route path="/lecture" component={LecturePage} />
+                <Route path="/lecture/:id" component={LecturePage} />
                 <Route path="/labworks" component={LabWorks} />
-                <Route path="/labpage" component={LabPage} />
+                <Route path="/labpage/:id" component={LabPage} />
                 <Route path="/addlect" component={AddLecture} />
-                <Route path="/editlect" component={EditLecture} />
+                <Route path="/editlect/:id" component={EditLecture} />
                 <Route path="/addlab" component={AddLab} />
-                <Route path="/editlab" component={EditLab} />
+                <Route path="/editlab/:id" component={EditLab} />
             </Switch>
             <Footer/>
         </div>
