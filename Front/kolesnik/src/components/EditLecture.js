@@ -76,7 +76,7 @@ useEffect(()=>{
                     </div>
                     <div className="inp">
                         <span>Фото</span>
-                        <input value={fileName} type="file" accept="image/png, image/jpeg" />
+                        <input type="file" accept="image/png, image/jpeg" />
                     </div>
                     <div>
                         <button onClick={handleClick} className="add-but">Зберегти зміни</button>
